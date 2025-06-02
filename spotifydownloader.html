@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Downloader Pro</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1db954;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1db954;
+      margin-top: 2rem;
+    }
+
+    .features, .plans {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .plans table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .plans th, .plans td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .plans th {
+      background-color: #e5ffe9;
+    }
+
+    .important {
+      background-color: #fff9c4;
+      border-left: 6px solid #fbc02d;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto 0 auto;
+      background-color: #1db954;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #17a443;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .plans th, .plans td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎵 Spotify Downloader Pro</h1>
+    <p>Téléchargez vos playlists Spotify en audio ou vidéo, en toute simplicité !</p>
+  </header>
+
+  <main>
+
+    <section class="features">
+      <h2>🚀 Qu'est-ce que c'est ?</h2>
+      <p>Spotify Downloader Pro est une application de bureau qui vous permet de :</p>
+      <ul>
+        <li>✅ Importer vos playlists Spotify</li>
+        <li>✅ Télécharger les titres via YouTube</li>
+        <li>✅ Choisir le format : <strong>audio (M4A)</strong> ou <strong>vidéo (MP4)</strong></li>
+        <li>✅ Profiter d'une interface moderne, intuitive et efficace</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>🌟 Fonctionnalités principales</h2>
+      <ul>
+        <li>🎧 <strong>Liberté totale :</strong> Téléchargez vos musiques préférées, écoutez-les hors ligne</li>
+        <li>🖼️ <strong>Gestion des playlists :</strong> Visualisez les pochettes, sélectionnez les titres</li>
+        <li>🧭 <strong>Navigation fluide :</strong> Interface en onglets (Playlists, Téléchargements, Guide...)</li>
+        <li>🛠️ <strong>Configuration rapide :</strong> Ajout simple des clés API Spotify</li>
+        <li>📁 <strong>Téléchargements intelligents :</strong> Pas de doublons, barre de progression, journal détaillé</li>
+        <li>🎬 <strong>Support FFmpeg :</strong> Conversion audio/vidéo automatique</li>
+        <li>🔐 <strong>Système sécurisé :</strong> Connexion/inscription avec gestion de compte</li>
+      </ul>
+    </section>
+
+    <section class="plans">
+      <h2>💳 Plans d'abonnement disponibles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>🏷️ Plan</th>
+            <th>💰 Prix (FCFA/mois)</th>
+            <th>🔊 Audio/mois</th>
+            <th>🎥 Vidéo/mois</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🆓 Gratuit</td>
+            <td>0</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>💳 Basique</td>
+            <td>1 000</td>
+            <td>50</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>💼 Premium</td>
+            <td>2 000</td>
+            <td>120</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>👑 Avancé</td>
+            <td>3 500</td>
+            <td>300</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>🔥 Illimité</td>
+            <td>5 000</td>
+            <td>Illimité</td>
+            <td>Illimité</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>📊 Chaque plan</strong> affiche vos quotas restants et la date de renouvellement.</p>
+    </section>
+
+    <section class="features">
+      <h2>✨ Idéal pour :</h2>
+      <ul>
+        <li>🎶 Passionnés souhaitant créer une bibliothèque musicale locale</li>
+        <li>🌍 Utilisateurs en voyage ou avec une connexion limitée</li>
+        <li>🎥 Créateurs de contenu (⚠️ respectez les droits d’auteur)</li>
+        <li>💡 Toute personne voulant plus de contrôle sur sa musique</li>
+      </ul>
+    </section>
+
+    <section class="important">
+      <strong>📌 Important :</strong><br>
+      Spotify Downloader Pro utilise <strong>YouTube</strong> comme source pour les téléchargements.  
+      Veuillez <strong>respecter les droits d’auteur</strong> et les conditions d’utilisation de Spotify et YouTube.
+    </section>
+
+    <a class="download-btn" href="https://drive.google.com/drive/folders/1p6KzTCfRrTZP6_-1LSpDOiHXp_nErXQx?usp=drive_link" target="_blank">
+      📥 Télécharger Spotify Downloader Pro
+    </a>
+
+  </main>
+
+  <footer>
+    <br>
+    <a href="https://wa.me/22957792710" target="_blank" style="text-decoration: none;">
+      <button style="
+        background-color: #25D366;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      ">
+        📱 Contact WhatsApp : +229 57 79 27 10
+      </button>
+    </a>
+    <br><br>
+    &copy; 2025 Spotify Downloader Pro – Tous droits réservés.
+  </footer>
+
+</body>
+</html>
