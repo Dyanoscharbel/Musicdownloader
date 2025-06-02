@@ -45,10 +45,15 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
+    .plans .table-container {
+      overflow-x: auto;
+    }
+
     .plans table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
+      min-width: 600px;
     }
 
     .plans th, .plans td {
@@ -143,48 +148,50 @@
 
     <section class="plans">
       <h2>💳 Plans d'abonnement disponibles</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>🏷️ Plan</th>
-            <th>💰 Prix (FCFA/mois)</th>
-            <th>🔊 Audio/mois</th>
-            <th>🎥 Vidéo/mois</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>🆓 Gratuit</td>
-            <td>0</td>
-            <td>15</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>💳 Basique</td>
-            <td>1 000</td>
-            <td>50</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>💼 Premium</td>
-            <td>2 000</td>
-            <td>120</td>
-            <td>40</td>
-          </tr>
-          <tr>
-            <td>👑 Avancé</td>
-            <td>3 500</td>
-            <td>300</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td>🔥 Illimité</td>
-            <td>5 000</td>
-            <td>Illimité</td>
-            <td>Illimité</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>🏷️ Plan</th>
+              <th>💰 Prix (FCFA/mois)</th>
+              <th>🔊 Audio/mois</th>
+              <th>🎥 Vidéo/mois</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🆓 Gratuit</td>
+              <td>0</td>
+              <td>15</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>💳 Basique</td>
+              <td>1 000</td>
+              <td>50</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>💼 Premium</td>
+              <td>2 000</td>
+              <td>120</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>👑 Avancé</td>
+              <td>3 500</td>
+              <td>300</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>🔥 Illimité</td>
+              <td>5 000</td>
+              <td>Illimité</td>
+              <td>Illimité</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p><strong>📊 Chaque plan</strong> affiche vos quotas restants et la date de renouvellement.</p>
     </section>
 
